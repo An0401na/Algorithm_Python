@@ -1,3 +1,5 @@
+#배열에서 최소값을 찾는 recursive algorithm 설계하기
+
 def findMin(arr, start, end):
     if end-start ==1:
         if arr[start] < arr[end]:
