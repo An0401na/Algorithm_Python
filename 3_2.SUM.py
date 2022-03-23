@@ -11,3 +11,5 @@ arr=[5,5,1,2,0,7]
 sum = SUM(arr,0,arr.__len__()-1)
 print(sum)
 print(arr)
+
+
