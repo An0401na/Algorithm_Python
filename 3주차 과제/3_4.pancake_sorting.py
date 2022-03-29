@@ -1,7 +1,7 @@
 
 
-def pancake_sorting(arr, end,i) :
-
+def pancake_sorting(arr, end) :
+   
     if end==0 :
         return arr
     else :
@@ -16,17 +16,11 @@ def pancake_sorting(arr, end,i) :
         slice_a.reverse()
         arr=slice_a+slice_b
         print(arr)
-        i+=1
     
-        pancake_sorting(arr, end-1, i)
-        return arr
+        return  pancake_sorting(arr, end-1)
 
-    
-    
-    
-arr = [1,3,2]
-result=pancake_sorting(arr,arr.__len__()-1,0)
+arr = [1,3,4,5,2]
+result=pancake_sorting(arr,arr.__len__()-1)
 print("result : ", result)
 
 
-# 아니 왜 결과가 이따구로 나오지...?
